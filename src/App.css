@@ -1,0 +1,38 @@
+.profile{
+    border-radius: 50%;
+    height: 480px;
+    width: 480px;
+}
+
+.hello{
+    font-size: 200px;
+    letter-spacing: -0.02em;
+}
+
+.div2{
+    margin-left: 465px;
+}
+
+.circle1{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #EEA302;
+}
+
+.circle2{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FF3B25;
+}
+
+.circle3{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #80D8DA;
+}
