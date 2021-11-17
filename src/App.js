@@ -7,17 +7,18 @@ import img from './Images/Profile.jpg';
 function App() {
   return (
     <div className="App">
-      <div>
         <h2>My Portos</h2>
-        <div className="div1">
+      <div class="d-flex w-100 p-relative justify-content-center">     
+        <div class="div1 w-50 d-flex justify-content-end">
           <img className="profile" src={img} alt=""/>
-          <span className="hello">Hello</span>
-          <span>A Bit About Me</span>
         </div>
-        <div className="div2">
-          <span className="circle1"></span>
-          <span className="circle2"></span>
-          <span className="circle3"></span>
+        <div className="div2 w-50 px-5">
+          <div className="hello">Hello</div>
+          <h3>A Bit About Me</h3>
+          <p>I'am currently in progress developing myself to learn about frontend and web programming. I'am interested in meeting new people and learning new things to improve my skill and knowledge. I'd love to be part of amazing team where I can apply my skill to contribute to the team.</p>
+          <span className="circle first"><span className="fw-bold">Resume</span></span>
+          <span className="circle second mx-3"><span className="fw-bold">Project</span></span>
+          <span className="circle third"><span className="fw-bold">Contact</span></span>
         </div>
       </div>
     </div>

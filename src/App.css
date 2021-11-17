@@ -5,34 +5,48 @@
 }
 
 .hello{
-    font-size: 200px;
+    font-size: 180px;
     letter-spacing: -0.02em;
 }
 
-.div2{
-    margin-left: 465px;
+.dv1{
+    display: inline-block;
 }
 
-.circle1{
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    display: inline-block;
+.div2{
+    /* margin-left: 465px; */
+}
+
+.circle.first {
     background-color: #EEA302;
 }
 
-.circle2{
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    display: inline-block;
+.circle.second {
     background-color: #FF3B25;
 }
 
-.circle3{
+.circle.third {
+    background-color: #80D8DA;
+}
+
+.circle{
     height: 140px;
     width: 140px;
     border-radius: 50%;
     display: inline-block;
-    background-color: #80D8DA;
+    position: relative;
+    border: 1px solid black;
+    transition: all 0.4s linear;
+}
+
+.circle span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.circle:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
 }
