@@ -1,28 +1,64 @@
 // import logo from './logo.svg';
 import './App.css';
-import './image';
-import img from './Images/Profile.jpg';
+import React from "react";
+import Home from './Pages/Home';
+import Resume from './Pages/Resume';
+import Project from './Pages/Project';
+import Contact from './Pages/Contact';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+
 
 
 function App() {
   return (
     <div className="App">
-        <h2>My Portos</h2>
-      <div class="d-flex w-100 p-relative justify-content-center">     
-        <div class="div1 w-50 d-flex justify-content-end">
-          <img className="profile" src={img} alt=""/>
-        </div>
-        <div className="div2 w-50 px-5">
-          <div className="hello">Hello</div>
-          <h3>A Bit About Me</h3>
-          <p>I'am currently in progress developing myself to learn about frontend and web programming. I'am interested in meeting new people and learning new things to improve my skill and knowledge. I'd love to be part of amazing team where I can apply my skill to contribute to the team.</p>
-          <span className="circle first"><span className="fw-bold">Resume</span></span>
-          <span className="circle second mx-3"><span className="fw-bold">Project</span></span>
-          <span className="circle third"><span className="fw-bold">Contact</span></span>
-        </div>
+       <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li>
+              <Link to="/project">Project</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/resume"> 
+            <Resume />
+          </Route>
+          <Route path="/project">
+            <Project />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
+    </Router>
     </div>
   );
 }
 
 export default App;
+
