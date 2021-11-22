@@ -1,9 +1,10 @@
 import img from '../Images/Profile.jpg';
 
 function Home () {
-    return (<div>
+    return (
+    <div>
        <h2>My Portos</h2>
-      <div class="d-flex w-100 p-relative justify-content-center">     
+      <div class="d-flex w-100 p-relative justify-content-center">    
         <div class="div1 w-50 d-flex justify-content-end">
           <img className="profile" src={img} alt=""/>
         </div>
@@ -16,7 +17,8 @@ function Home () {
           <span className="circle third"><span className="fw-bold">Contact</span></span>
         </div>
       </div>        
-    </div>);
+    </div>
+    );
 }
 
 export default Home;

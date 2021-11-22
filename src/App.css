@@ -35,7 +35,7 @@
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     transition: all 0.4s linear;
 }
 
@@ -49,4 +49,9 @@
 .circle:hover {
     background-color: whitesmoke;
     cursor: pointer;
+}
+
+.project {
+    width: 491px;
+    height: 331px;
 }
