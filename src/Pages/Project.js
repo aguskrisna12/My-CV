@@ -3,19 +3,48 @@ import img2 from '../Images/project2.jpg'
 import img3 from '../Images/project3.jpg'
 
 function Project () {
+    let projects = [
+        { 
+            title: 'Poject 1',
+            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+            imgUrl: img1
+        },
+        { 
+            title: 'Poject 2',
+            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+            imgUrl: img2
+        },
+        { 
+            title: 'Poject 3',
+            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+            imgUrl: img3
+        },
+        { 
+            title: 'Poject 4',
+            description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English.',
+            imgUrl: img1
+        }
+    ];
+
     return (
-        <div>
-            <h3>Project</h3>
-            <div class="d-flex w-100 p-relative justify-content-center">
-                <div class="div1 w-50 d-flex justify-content-center mt-2">
-                    <h3>Projects</h3>
-                </div>
-                <div className="div2 w-50 px-5 mt-5">
-                    <img className="project mt-5" src={img2} alt="broken photo"/>
-                    <img className="project mt-5" src={img1} alt="broken photo"/>
-                    <img className="project mt-5 mb-5" src={img3} alt="broken photo"/>
-                </div>
-            </div>
+        <div className="d-flex justify-content-center">
+            <table className="w-50">
+                <tbody>
+                    {projects.map( project => {
+                        return (
+                            <tr>
+                                <td>
+                                    <h2>{project.title}</h2>
+                                    <p>{project.description}</p>
+                                </td>
+                                <td>
+                                    <img className="project mt-5" src={project.imgUrl} alt="broken photo"/>
+                                </td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
         </div>
     )
 }
