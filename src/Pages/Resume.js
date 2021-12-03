@@ -24,18 +24,10 @@ function Resume () {
     ]
 
     let dataWorks = [
-        {   since: "2018-2019",
-            title: "Accounting",
+        {   since: "2018-2020",
+            title: "Accounting & Tax Officer",
             jobdesc: "I'am an accounting and tax officer in PT.Chandra Consulting"
-        },
-        {   since: "2018-2019",
-            title: "Accounting",
-            jobdesc: "I'am an accounting and tax officer in PT.Chandra Consulting"
-        },
-        {   since: "2018-2019",
-            title: "Accounting",
-            jobdesc: "I'am an accounting and tax officer in PT.Chandra Consulting"
-        },
+        }
     ]
 
     let dataEducation = [
@@ -61,16 +53,16 @@ function Resume () {
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Skill & Expertise</h3>
                 </div>
-                <div className="w-50 d-flex justify-content-center">
+                <div className="w-50 d-flex">
                     <div>
+                        <ul className="list-style-none">
                         {dataResume.map((resume) => {
                             return (
-                                <ul>
-                                    <li>{resume.title}</li>
-                                    <a href={resume.url}>{resume.certificate}</a>
-                                </ul>
-                            )
-                        })}
+                                    <><li className="ps-3">{resume.title}</li>
+                                    <a className="ps-3" href={resume.url}>{resume.certificate}</a>
+                                    </>)
+                                })}
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -81,17 +73,19 @@ function Resume () {
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Work Experience</h3>
                 </div>
-                <div className="w-50 d-flex justify-content-center">
-                    <table>
+                <div className="w-50 d-flex">
+                    <table className="table table-borderless">
                         {dataWorks.map((work) => {
                             return (
                                 <tr>
-                                    <td>
+                                    <td className="pt-3 align-top">
                                         <span>{work.since}</span>
                                     </td>
                                     <td>
-                                        <h3>{work.title}</h3>
-                                        <p>{work.jobdesc}</p>
+                                        <div className="ps-3">
+                                            <h3 className="m-0">{work.title}</h3>
+                                            <p className="m-3">{work.jobdesc}</p>    
+                                        </div>
                                     </td>
                                 </tr>
                             )
@@ -107,14 +101,14 @@ function Resume () {
                     <h3>Education</h3>
                 </div>
                 <div className="w-50 d-flex justify-content-center">
-                    <table>
+                    <table className="table table-borderless">
                         {dataEducation.map((education) => {
                             return (
                                 <tr>
-                                    <td>
+                                    <td className="pt-3 align-top" style={{whiteSpace:"nowrap"}}>
                                         <span>{education.since}</span>
                                     </td>
-                                    <td>
+                                    <td className="ps-3">
                                         <h4>{education.school}</h4>
                                     </td>
                                 </tr>

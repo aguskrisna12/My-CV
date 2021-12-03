@@ -13,9 +13,6 @@ import {
 } from "react-router-dom";
 
 
-
-
-
 function App() {
   return (
     <div className="App">
@@ -25,15 +22,6 @@ function App() {
           <ul>
             <li>
               <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/resume">Resume</Link>
-            </li>
-            <li>
-              <Link to="/project">Project</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
