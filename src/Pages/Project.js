@@ -1,11 +1,12 @@
-import img1 from '../Images/project1.jpg'
+import img1 from '../Images/NewsAPI.png'
 import img2 from '../Images/project2.jpg'
 import img3 from '../Images/project3.jpg'
+import { Link } from 'react-router-dom';
 
 function Project () {
 
     let projects = [
-        {   title: "Project1", 
+        {   title: "News-API", 
             description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
             imgUrl: img1
         },
@@ -19,7 +20,7 @@ function Project () {
         },
         {   title: "Project4", 
             description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-            imgUrl: img1
+            imgUrl: img2
         }
     ]
     
@@ -30,8 +31,8 @@ function Project () {
                     return (
                         <tr>
                             <td>
-                                <h2>{project.title}</h2>
-                                <p>{project.description}</p>
+                                <h2>{project.title}</h2><Link to="./newsapi"><span>[Link]</span></Link>
+                                <p className="pe-5">{project.description}</p>
                             </td>
                             <td>
                                 <img className="project mt-5" src={project.imgUrl} alt="broken photo"/>

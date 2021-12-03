@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import Project from './Pages/Project';
 import Contact from './Pages/Contact';
+import NewsApi from  './Apps/News-API';
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/newsapi">
+            <NewsApi />
           </Route>
           <Route path="/">
             <Home />
