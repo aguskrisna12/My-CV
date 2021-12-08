@@ -7,12 +7,12 @@ function Main () {
           [isLoading, setIsLoading] = useState(false),
           [keyword, setKeyword] = useState("");
     function queryData () {
-        if(!keyword) {
-            return
+        if(!keyword) { // jika tidak ada keyword maka berhenti/tidak melakukan apa" 
+            return 
         }
         var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-12-01&to=2021-12-03&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
         setIsLoading(true);
-        fetch(url)
+        fetch(url) 
         .then(result => result.json())
         .then(jsonData => {
             setArticles(jsonData.articles);
@@ -34,7 +34,7 @@ function Main () {
     return (
         <div className="container">
             <div className="d-flex">
-            <h2>NewsAPI</h2>
+            <h2>NewsAPI</h2> {/* asd */}
                 <input type="text" onKeyDown={handleKeyDown} className="form-group ms-auto" name="keyword" 
                 onChange={e => setKeyword (e.target.value)} value={keyword}/>
                 <button onClick={queryData} className="btn btn-success"> <i className="bi bi-search"></i></button>   

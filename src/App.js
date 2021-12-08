@@ -6,6 +6,7 @@ import Resume from './Pages/Resume';
 import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import NewsApi from  './Apps/News-API';
+import TodoList from './Apps/Todo-List';
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path="/newsapi">
             <NewsApi />
+          </Route>
+          <Route path="/todolist">
+            <TodoList />
           </Route>
           <Route path="/">
             <Home />
