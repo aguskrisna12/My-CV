@@ -1,9 +1,8 @@
-ul > li { 
+ul > li > div { 
     padding: 15px;
     margin: 20px;
     background-color:rgba(61, 120, 175, 0.411);
     border-radius: 30px;
-    
 }
 
 ul {

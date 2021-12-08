@@ -17,11 +17,18 @@ const Todo = () => {
         setTodos(getTodos.concat(todo))
     } 
 
+    const eventDeleteTodo = (todoId) => {
+        var filtered = getTodos.filter((item) => {
+            return item.id !== todoId
+        })
+        setTodos(filtered)
+    }
+
     return (
         <div>
             <h2>Todo List</h2>
             <TodoCreate onCreateTodo={eventCreateTodo}/>
-            <TodoList dataTodos={getTodos}/>
+            <TodoList dataTodos={getTodos} dataDelete={eventDeleteTodo}/>
         </div>
     )
 }

@@ -6,7 +6,16 @@ const TodoList = (props) => {
         <ul>{
             props.dataTodos.map((todo) => {
                 // {id: 1, title: "eat"}
-                return <li key={todo.id}>{todo.title}</li>
+                return <> 
+                    <li key={todo.id}> 
+                        <div>
+                            {todo.title}
+                        <button onClick={() => {
+                            props.dataDelete(todo.id)}} type=""> <i className="bi bi-trash"></i></button> 
+                        </div>
+                    </li>
+                    
+                </> 
             })
         }</ul>
     )
