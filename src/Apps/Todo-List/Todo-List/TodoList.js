@@ -3,7 +3,7 @@ import './TodoList.css'
 const TodoList = (props) => {
     // console.log(prop.dataList)
     return (
-        <ul>{
+        <ul className="todoItem">{
             props.dataTodos.map((todo) => {
                 // {id: 1, title: "eat"}
                 return <> 

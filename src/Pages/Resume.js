@@ -1,13 +1,13 @@
 function Resume () {
 
     let dataResume = [
-        {   title: "JavaScript",
-            certificate: "SoloLearn Javascript Course",
-            url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png"
-        },
         {   title: "ReactJS",
             certificate: "SoloLearn ReactJS Course",
             url: "https://www.sololearn.com/Certificate/1097-21627687/jpg/"
+        },
+        {   title: "JavaScript",
+            certificate: "SoloLearn Javascript Course",
+            url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png"
         },
         {   title: "HTML",
             certificate: "SoloLearn HTML Course",
@@ -48,7 +48,7 @@ function Resume () {
 
     return (
         <div className="container">
-            <h2>Resume</h2>
+            <h3>Resume</h3>
             <div className="d-flex ps-5 justify-content-center">
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Skill & Expertise</h3>
@@ -59,7 +59,7 @@ function Resume () {
                         {dataResume.map((resume) => {
                             return (
                                     <><li className="ps-3">{resume.title}</li>
-                                    <a className="ps-3" href={resume.url}>{resume.certificate}</a>
+                                    <a className="ps-3" href={resume.url} target="_blank">{resume.certificate}</a>
                                     </>)
                                 })}
                         </ul>
