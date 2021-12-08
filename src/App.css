@@ -1,3 +1,7 @@
+.background {
+    background-color: #d1d1d1;
+}
+
 .profile{
     border-radius: 50%;
     height: 480px;
@@ -66,4 +70,8 @@ span {
 }
 .marginTop {
     margin-top: 110px;
+}
+
+.navbar {
+    list-style: none;
 }

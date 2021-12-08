@@ -21,12 +21,12 @@ function App() {
       <div>
         <div>
           <nav>
-            <ul className="d-flex justify-content-end">
+            <ul className="d-flex justify-content-end navbar">
               <li>
-                <Link to="/"> <i class="bi bi-house-door-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/resume"><i class="bi bi-file-earmark-person-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/project"><i class="bi bi-person-workspace p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/contact"><i class="bi bi-person-lines-fill p-3 me-4" style={{fontSize:"1.5rem"}}></i></Link>
+                <Link to="/"> <i className="bi bi-house-door-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
+                <Link to="/resume"><i className="bi bi-file-earmark-person-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
+                <Link to="/project"><i className="bi bi-person-workspace p-3" style={{fontSize:"1.5rem"}}></i></Link>
+                <Link to="/contact"><i className="bi bi-person-lines-fill p-3 me-4" style={{fontSize:"1.5rem"}}></i></Link>
               </li>
             </ul>
           </nav>   
