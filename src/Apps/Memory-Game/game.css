@@ -1,0 +1,17 @@
+.box {
+    height: 100px;
+    background-color: darkgoldenrod;
+    border: 2px solid white;
+}
+
+.box.open {
+    background-color: violet;
+}
+
+.box.matched {
+    background-color: yellowgreen;
+}
+
+.box-row {
+    width: 600px;
+}
