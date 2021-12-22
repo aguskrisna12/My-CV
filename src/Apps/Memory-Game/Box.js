@@ -3,7 +3,9 @@ function Box (props) {
     return(
         <div key={'box-' + index} 
             onClick={() => {selectBox(boxNumber, index)}} 
-            className={`box col-sm-2 ${isOpen && 'open'} ${isMatched && 'matched'}`}> {boxNumber} </div>
+            className={`box col-sm-2 ${isOpen && 'open'} ${isMatched && 'matched'}`}>
+                {boxNumber} ({index})
+        </div>
     )
 }
 

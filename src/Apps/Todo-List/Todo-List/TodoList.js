@@ -10,11 +10,14 @@ const TodoList = (props) => {
                     <li key={todo.id}> 
                         <div>
                             {todo.title}
-                        <button onClick={() => {
-                            props.dataDelete(todo.id)}} type=""> <i className="bi bi-trash"></i></button> 
+                            <button onClick={() => { props.dataDelete(todo.id)}}> 
+                                <div>
+                                    <i className="bi bi-trash"></i>  
+                                </div>
+                            </button> 
                         </div>
                     </li>
-                    
+
                 </> 
             })
         }</ul>

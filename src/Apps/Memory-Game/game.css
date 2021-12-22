@@ -1,15 +1,15 @@
 .box {
     height: 100px;
-    background-color: darkgoldenrod;
+    background-color: #2abbb9;
     border: 2px solid white;
 }
 
 .box.open {
-    background-color: violet;
+    background-color: #ffb429;
 }
 
 .box.matched {
-    background-color: yellowgreen;
+    background-color: #5eff29;
 }
 
 .box-row {

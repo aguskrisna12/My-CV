@@ -11,15 +11,13 @@ const Todo = () => {
         {id: 4, title: "Learn"}
     ])
 
-    // const [getTodos, setTodos] = useState({title :  "", id: 1})
-
-    const eventCreateTodo = (todo) => {
+    const eventCreateTodo = (todo) => { // menggabungkan data useState dengan user yg di input ke todo-list
         setTodos(getTodos.concat(todo))
     } 
 
-    const eventDeleteTodo = (todoId) => {
-        var filtered = getTodos.filter((item) => {
-            return item.id !== todoId
+    const eventDeleteTodo = (todoId) => { 
+        var filtered = getTodos.filter((item) => { // metod filter adalah mensaring data yg dibutuhkan
+            return item.id !== todoId // maka saring
         })
         setTodos(filtered)
     }
