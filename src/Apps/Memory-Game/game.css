@@ -2,6 +2,7 @@
     height: 100px;
     background-color: #2abbb9;
     border: 2px solid white;
+    position: relative;
 }
 
 .box.open {
@@ -14,4 +15,19 @@
 
 .box-row {
     width: 600px;
+}
+
+.box-image {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all ease 1s;
+}
+
+.showImage {
+    transform: scaleX(1);
 }

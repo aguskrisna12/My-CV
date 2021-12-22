@@ -1,6 +1,7 @@
 import Box from './Box';
 import './game.css';
 import {useState, useEffect} from 'react';
+import images from './Images'
 
 function Main () {
     const [boxes, setBoxes] = useState([]);
@@ -14,15 +15,24 @@ function Main () {
 
         let valid = false;
 
-        while (!valid) {
+        while (valid === false) {
             let angkaRandom = Math.floor(Math.random() * 100) % 18;
+
+            // Cek jika angkaRandom sudah pernah muncul 1 kali
+            // Maka simpan angkaRandom ke boxes dan
+            // set randomized[angkaRandom] = true
             if (!randomized[angkaRandom] && tempBoxes.indexOf(angkaRandom) !== -1) {
                 tempBoxes.push(angkaRandom);
                 randomized[angkaRandom] = true;
             }
+            // Cek jika angkaRandom belum pernah muncul samasekali
+            // Maka simpan angkaRandom ke boxes
             if (!randomized[angkaRandom] && tempBoxes.indexOf(angkaRandom) === -1) {
                 tempBoxes.push(angkaRandom);
             }
+
+            // Cek jika box sudah terisi 36 kali
+            // Maka set valid = true, sehingga berhenti dari looping
             if (tempBoxes.length === 36) {
                 valid = true;
             }
@@ -78,7 +88,8 @@ function Main () {
                                  index={boxIndex}
                                  selectBox={selectBox} 
                                  isOpen={selectedBox.indexOf(boxIndex) !== -1}
-                                 isMatched={matches.indexOf(boxNumber) !== -1} />
+                                 isMatched={matches.indexOf(boxNumber) !== -1} 
+                                 imageSource={images[boxNumber]}/>
                         );
                     })}
                 </div>
