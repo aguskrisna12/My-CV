@@ -25,12 +25,14 @@ function App() {
       <div>
         <div>
           <nav>
-            <ul className="d-flex justify-content-end navbar">
+            <ul className="d-flex justify-content-end navbar pt-4 pe-3">
               <li>
-                <Link to="/"> <i className="bi bi-house-door-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/resume"><i className="bi bi-file-earmark-person-fill p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/project"><i className="bi bi-person-workspace p-3" style={{fontSize:"1.5rem"}}></i></Link>
-                <Link to="/contact"><i className="bi bi-person-lines-fill p-3 me-4" style={{fontSize:"1.5rem"}}></i></Link>
+                <div>
+                  <Link className='px-3 text-decoration-none' to="/">Home</Link>
+                  <Link className='px-3 text-decoration-none'  to="/resume">Resume</Link>
+                  <Link className='px-3 text-decoration-none' to="/project">Project</Link>
+                  <Link className='px-3 text-decoration-none me-3' to="/contact">Contact</Link>
+                </div>
               </li>
             </ul>
           </nav>   

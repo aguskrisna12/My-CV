@@ -7,9 +7,9 @@ const Todo = () => {
     const [getTodos, setTodos] = useState([
         {id: 1, title: "Eat"},
         {id: 2, title: "Sleep"},
-        {id: 3, title: "Code"},
-        {id: 4, title: "Learn"}
-    ])
+        {id: 3, title: "Find Jobs"},
+        {id: 4, title: "Repeat"}
+    ]);
 
     const eventCreateTodo = (todo) => { // menggabungkan data useState dengan user yg di input ke todo-list
         setTodos(getTodos.concat(todo))

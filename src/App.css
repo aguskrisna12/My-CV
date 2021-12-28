@@ -79,3 +79,16 @@ span {
 .link {
     color: black;
 }
+
+.navbar a:not(:last-child) {
+    border-right: #212529 solid 1px;
+}
+
+.navbar a {
+    color: #212529;
+}
+
+.App {
+    background-color: #eeeeee;
+    min-height: 100vh;
+}

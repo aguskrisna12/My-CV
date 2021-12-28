@@ -10,7 +10,7 @@ function Main () {
         if(!keyword) { // jika tidak ada keyword maka berhenti/tidak melakukan apa" 
             return 
         }
-        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-12-01&to=2021-12-03&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
+        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-12-01&to=2021-12-25&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
         setIsLoading(true);
         fetch(url) 
         .then(result => result.json())
@@ -24,12 +24,12 @@ function Main () {
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             queryData();
-          console.log('do validate')
         }
       }
 
     useEffect(function (){
-        queryData();
+        queryData(); // erorr
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <div className="container">
@@ -55,10 +55,10 @@ function Main () {
                 {!isLoading && articles.map((data, key) => {
                    return (
                        <tr key={key}>
-                           <td className="pt-5">{data.title}<a href={data.url} target="_blank">[Source]</a></td> 
+                           <td className="pt-5">{data.title}<a href={data.url}>[Source]</a></td> 
                            <td className="text-center pt-5">{data.author}</td>
                            <td className="text-center pt-5">{new Date(data.publishedAt).toLocaleString()}</td>
-                           <td><img className="img-api" src={data.urlToImage} alt="image"/></td>
+                           <td><img className="img-api" src={data.urlToImage} alt="news"/></td>
                        </tr>
                    )
                 })}

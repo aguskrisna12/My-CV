@@ -7,7 +7,7 @@ function Box (props) {
                 <div style={{backgroundImage: `url(${imageSource})`, 
                              backgroundSize: 'cover'}}
                     className={`box-image ${(isOpen || isMatched) && 'showImage'}`}></div>
-                {boxNumber} ({index})
+                {/* {boxNumber} ({index}) */}
         </div>
     )
 }

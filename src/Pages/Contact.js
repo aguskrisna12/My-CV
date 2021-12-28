@@ -26,7 +26,7 @@ function Contact () {
                                 <i className="bi bi-linkedin pe-3" style={{fontSize:"2rem"}}/>
                             <div>
                                 <h5 className="mb-0">LinkedIn</h5>
-                                <a href="https://www.linkedin.com/in/agus-krisna-udayana-754874185/" target="_blank">Agus Krisna</a>
+                                <a href="https://www.linkedin.com/in/agus-krisna-udayana-754874185/" target="_blank" rel="noreferrer">Agus Krisna</a>
                             </div>
                         </div>
                     </div>

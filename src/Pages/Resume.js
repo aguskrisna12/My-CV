@@ -59,7 +59,7 @@ function Resume () {
                         {dataResume.map((resume) => {
                             return (
                                     <><li className="ps-3">{resume.title}</li>
-                                    <a className="ps-3" href={resume.url} target="_blank">{resume.certificate}</a>
+                                    <a className="ps-3" href={resume.url} target="_blank" rel="noreferrer">{resume.certificate}</a>
                                     </>)
                                 })}
                         </ul>

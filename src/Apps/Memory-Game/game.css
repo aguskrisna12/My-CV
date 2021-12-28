@@ -6,11 +6,11 @@
 }
 
 .box.open {
-    background-color: #ffb429;
+    background-color: transparent;
 }
 
 .box.matched {
-    background-color: #5eff29;
+    background-color: transparent;
 }
 
 .box-row {
