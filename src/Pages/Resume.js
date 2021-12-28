@@ -84,7 +84,11 @@ function Resume () {
                                     <td>
                                         <div className="ps-3">
                                             <h3 className="m-0">{work.title}</h3>
-                                            <p className="m-3">{work.jobdesc}</p>    
+                                            <ul>
+                                                <li>
+                                                    <p className="my-3">{work.jobdesc}</p>    
+                                                </li>
+                                            </ul>
                                         </div>
                                     </td>
                                 </tr>

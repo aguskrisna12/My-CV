@@ -1,4 +1,4 @@
-import img from '../Images/Calling2.jpeg'
+import img from '../Images/Calling3.png'
 
 
 function Contact () {

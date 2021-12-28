@@ -1,4 +1,4 @@
-import img from '../Images/Profile.jpg';
+import img from '../Images/Profile4.jpg';
 import { Link } from 'react-router-dom';
 
 
