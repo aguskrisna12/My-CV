@@ -86,7 +86,7 @@ function Resume () {
                                             <h3 className="m-0">{work.title}</h3>
                                             <ul>
                                                 <li>
-                                                    <p className="my-3">{work.jobdesc}</p>    
+                                                    <p className="my-4">{work.jobdesc}</p>    
                                                 </li>
                                             </ul>
                                         </div>
