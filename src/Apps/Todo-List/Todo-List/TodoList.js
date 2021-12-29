@@ -20,8 +20,12 @@ const TodoList = (props) => {
                     <li key={todo.id}> 
                         <div className='d-flex align-items-center'>
                             {todo.title}
-                            <button onClick={()=>{}}></button>
-                            <button className='btn btn-danger ms-auto me-3' style={{borderRadius : "30px"}} onClick={() => { props.dataDelete(todo.id)}}> 
+                            <button className='btn btn-primary ms-auto me-3' style={{borderRadius : "15px"}} onClick={()=>{}}>
+                                <div>
+                                    <i className="bi bi-pencil ms-auto"></i> 
+                                </div>
+                            </button>
+                            <button className='btn btn-danger ms-auto me-3' style={{borderRadius : "15px"}} onClick={() => { props.dataDelete(todo.id)}}> 
                                 <div>
                                     <i className="bi bi-trash"></i>  
                                 </div>

@@ -9,6 +9,7 @@ import NewsApi from  './Apps/News-API';
 import TodoList from './Apps/Todo-List';
 import MemoryGame from './Apps/Memory-Game';
 import Counter from './Apps/Counter/index'
+import { useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -19,6 +20,23 @@ import {
 
 
 function App() {
+  let time = new Date().toLocaleTimeString();
+
+  const [ctime,setCtime] = useState(time);
+  const [cdate,setCdate] = useState(time);
+
+  const UpdateDate = () => {
+    time = new Date().toLocaleDateString();
+    setCdate(time)
+  }
+  setInterval(UpdateDate)
+
+  const UpdateTime = () => {
+    time = new Date().toLocaleTimeString();
+    setCtime(time)
+  }
+  setInterval(UpdateTime,1000);
+
   return (
     <div className="App">
        <Router>
@@ -28,6 +46,10 @@ function App() {
             <ul className="d-flex justify-content-end navbar pt-4 pe-3">
               <li>
                 <div>
+                  <div className='d-flex justify-content-end px-4'>
+                    <h5>{cdate}</h5>
+                  </div>
+                  <>{ctime}</>
                   <Link className='px-3 text-decoration-none' to="/">Home</Link>
                   <Link className='px-3 text-decoration-none'  to="/resume">Resume</Link>
                   <Link className='px-3 text-decoration-none' to="/project">Project</Link>
