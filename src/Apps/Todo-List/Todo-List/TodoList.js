@@ -1,31 +1,24 @@
 import './TodoList.css'
-// import { useState } from 'react'
+
 
 const TodoList = (props) => {
-    
-    // const [editTodos, setEditTodos] = useState('')
-
-
-    // const eventEditTodo = (event) => {
-    //     setEditTodos(event.target.value)
-    // }
-
-
-
     return (
         <ul className="todoItem">{
-            props.dataTodos.map((todo) => {
+            props.dataTodos.map((todo,index) => {
                 // {id: 1, title: "eat"}
                 return <> 
                     <li key={todo.id}> 
                         <div className='d-flex align-items-center'>
                             {todo.title}
-                            <button className='btn btn-primary ms-auto me-3' style={{borderRadius : "15px"}} onClick={()=>{}}>
+                            <button className='btn btn-primary ms-auto me-3' 
+                                disabled={props.isEditing === true} 
+                                style={{borderRadius : "15px"}} 
+                                onClick={()=>{props.handleEdit(index)}}>
                                 <div>
                                     <i className="bi bi-pencil ms-auto"></i> 
                                 </div>
                             </button>
-                            <button className='btn btn-danger ms-auto me-3' style={{borderRadius : "15px"}} onClick={() => { props.dataDelete(todo.id)}}> 
+                            <button className='btn btn-danger me-3' disabled={props.isEditing === true} style={{borderRadius : "15px"}} onClick={() => { props.dataDelete(todo.id)}}> 
                                 <div>
                                     <i className="bi bi-trash"></i>  
                                 </div>

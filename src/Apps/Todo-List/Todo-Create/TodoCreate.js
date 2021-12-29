@@ -4,29 +4,31 @@ import { useState } from 'react';
 const TodoCreate = (props) => {
 
     const handleSubmit = (event) => {
-        event.preventDefault();        
+        event.preventDefault(); 
+        if(props.isEditing === true) { // jika tombol berubah menjadi save
+            props.applyUpdate(props.getInputTodo); // apa yg di ketik saat ini
+            return;
+        }       
         const newTodo = {
             id: Math.floor(Math.random() * 100) +1,
-            title: getInputTodo
+            title: props.getInputTodo
         }
-        
         props.onCreateTodo(newTodo)
-        
-        setInputTodo('')
+        props.setInputTodo('')
     }
     
     const handleInputTodo = (event) => {
-        setInputTodo(event.target.value)
+        props.setInputTodo(event.target.value)
     }
 
-    const [getInputTodo, setInputTodo] = useState('');
+    
 
     
     
     return (
         <form className='todo-form' onSubmit={handleSubmit}>
-            <input type="text" value={getInputTodo} onChange={handleInputTodo}/>
-            <button type="submit">Add</button>
+            <input type="text" value={props.getInputTodo} onChange={handleInputTodo}/>
+            <button type="submit">{props.isEditing ? 'Save' : 'Add'}</button>
         </form>
     )
 }

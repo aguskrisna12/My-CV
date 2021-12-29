@@ -20,13 +20,14 @@ import {
 
 
 function App() {
-  let time = new Date().toLocaleTimeString();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  let time = new Date().toLocaleDateString("en-US", options);
 
   const [ctime,setCtime] = useState(time);
   const [cdate,setCdate] = useState(time);
 
   const UpdateDate = () => {
-    time = new Date().toLocaleDateString();
+    time = new Date().toLocaleDateString("en-US", options);
     setCdate(time)
   }
   setInterval(UpdateDate)
@@ -46,7 +47,7 @@ function App() {
             <ul className="d-flex justify-content-end navbar pt-4 pe-3">
               <li>
                 <div>
-                  <div className='d-flex justify-content-end px-4'>
+                  <div className='d-flex justify-content-end px-3 me-3'>
                     <h5>{cdate}</h5>
                   </div>
                   <>{ctime}</>
