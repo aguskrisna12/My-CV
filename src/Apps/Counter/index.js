@@ -1,7 +1,7 @@
-import click1 from './Audio/1.mp3'
-import click2 from './Audio/2.mp3'
-import click3 from './Audio/3.mp3'
-import { Howl, howler } from 'howler';
+// import click1 from './Audio/1.mp3'
+// import click2 from './Audio/2.mp3'
+// import click3 from './Audio/3.mp3'
+// import { Howl, howler } from 'howler';
 
 
 // function Main () {
