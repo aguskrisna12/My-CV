@@ -21,10 +21,6 @@ const TodoCreate = (props) => {
         props.setInputTodo(event.target.value)
     }
 
-    
-
-    
-    
     return (
         <form className='todo-form' onSubmit={handleSubmit}>
             <input type="text" value={props.getInputTodo} onChange={handleInputTodo}/>
