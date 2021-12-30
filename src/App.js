@@ -51,10 +51,10 @@ function App() {
                     <h5>{cdate}</h5>
                   </div>
                   <>{ctime}</>
-                  <Link className='px-3 text-decoration-none' to="/">Home</Link>
-                  <Link className='px-3 text-decoration-none'  to="/resume">Resume</Link>
-                  <Link className='px-3 text-decoration-none' to="/project">Project</Link>
-                  <Link className='px-3 text-decoration-none me-3' to="/contact">Contact</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none' to="/">Home</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none'  to="/resume">Resume</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none' to="/project">Project</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none me-3' to="/contact">Contact</Link>
                 </div>
               </li>
             </ul>

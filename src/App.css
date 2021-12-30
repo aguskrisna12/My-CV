@@ -4,13 +4,20 @@
 
 .profile{
     border-radius: 50%;
-    height: 480px;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
 }
 
 .hello{
-    font-size: 180px;
+    font-size: 100px;
     letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 992px) {
+    .hello {
+        font-size: 180px;
+    }
 }
 
 .dv1{
@@ -69,7 +76,7 @@ span {
     color: black;
 }
 .marginTop {
-    margin-top: 110px;
+    margin-top: 70px;
 }
 
 .navbar {
