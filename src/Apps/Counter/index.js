@@ -1,7 +1,7 @@
-import click1 from './Audio/1.mp3'
-import click2 from './Audio/2.mp3'
-import click3 from './Audio/3.mp3'
-import { Howl, howler } from 'howler';
+// import click1 from './Audio/1.mp3'
+// import click2 from './Audio/2.mp3'
+// import click3 from './Audio/3.mp3'
+// import { Howl, howler } from 'howler';
 
 
 // function Main () {
@@ -38,24 +38,33 @@ import { Howl, howler } from 'howler';
 
 // export default Main;
 
-function Main () {
+// function Main () {
 
-    const play = (src) => {
-        const sound = new Howl({
-            src: src,
-            html5: true,
-            format: ['mp3']
-        })
-        sound.play();
-    }
+//     const play = (src) => {
+//         const sound = new Howl({
+//             src: src,
+//             html5: true,
+//             format: ['mp3']
+//         })
+//         sound.play();
+//     }
+//     return (
+//         <div>
+//             hellow
+//             <button onClick={() => play(click1)}>Howl1</button>
+//             <button onClick={() => play(click2)}>Howl2</button>
+//             <button onClick={() => play(click3)}>Howl3</button>
+//         </div>
+//     )
+// }
+
+function Main () {
     return (
         <div>
-            hellow
-            <button onClick={() => play(click1)}>Howl1</button>
-            <button onClick={() => play(click2)}>Howl2</button>
-            <button onClick={() => play(click3)}>Howl3</button>
+            counter
         </div>
     )
 }
+
 
 export default Main;
