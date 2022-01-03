@@ -10,7 +10,7 @@ function Main () {
         if(!keyword) { // jika tidak ada keyword maka berhenti/tidak melakukan apa" 
             return 
         }
-        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-12-01&to=2021-12-25&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
+        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-30-01&to=2021-12-25&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
         setIsLoading(true);
         fetch(url) 
         .then(result => result.json())

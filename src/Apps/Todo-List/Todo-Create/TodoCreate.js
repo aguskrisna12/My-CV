@@ -22,10 +22,20 @@ const TodoCreate = (props) => {
     }
 
     return (
-        <form className='todo-form' onSubmit={handleSubmit}>
-            <input type="text" value={props.getInputTodo} onChange={handleInputTodo}/>
-            <button type="submit">{props.isEditing ? 'Save' : 'Add'}</button>
-        </form>
+
+        // <form class="input-group mb-3" onSubmit={handleSubmit}>
+        //     <input type="text" value={props.getInputTodo} onChange={handleInputTodo} className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+        //     <button class="btn btn-outline-secondary" type="submit" id="button-addon2">{props.isEditing ? 'Save' : 'Add'}</button>
+        // </form>
+        <div className='form justify-align-center'>
+            <form onSubmit={handleSubmit}>
+                <input type="text" value={props.getInputTodo} onChange={handleInputTodo}/>
+                <button type="submit">{props.isEditing ? 'Save' : 'Add'}</button>
+                {/* <label for="name" className='label-name'>
+                    <span className='content-name'>Name</span>
+                </label> */}
+            </form>
+        </div>
     )
 }
 

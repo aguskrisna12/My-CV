@@ -2,6 +2,8 @@
     background-color: #d1d1d1;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@350&display=swap');
+
 .profile{
     border-radius: 50%;
     width: 100%;
@@ -11,7 +13,8 @@
 
 .hello{
     font-size: 100px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.07em;
+    font-family: 'Work Sans', sans-serif;
 }
 
 @media only screen and (min-width: 992px) {
@@ -98,9 +101,5 @@ span {
 .App {
     background-color: #eeeeee;
     min-height: 100vh;
-}
-
-.hover:hover {
-    box-shadow: 1px 1px 2px 1px #d1d1d1;
-    transform: translateX(20px);
+    /* background-color: #fffafa; */
 }

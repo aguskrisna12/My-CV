@@ -14,14 +14,14 @@ function Buttons () {
 function Home () {
     return (
     <div className="marginTop">
-      <div class="row mx-0 d-flex w-100 p-relative justify-content-center">    
+      <div class="row mx-0 d-flex w-100 p-relative justify-content-center"> 
         
         <div class="div1 col-12 col-md-6 col-lg-5 col-xl-6 d-flex justify-content-end align-items-end">
           <img className="profile mt-xl-0 mt-lg-5" src={img} alt=""/>
         </div>
 
         <div className="div2 col-12 col-md-6 col-xl-6 col-lg-7 px-5">
-          <div className="hello">Hello</div>
+          <div className="hello me-3">Hello</div>
           <h3>A Bit About Me</h3>
           <p>I'am currently in progress developing myself to learn about frontend and web programming. I'am interested in meeting new people and learning new things to improve my skill and knowledge.</p>
           
