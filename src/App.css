@@ -70,9 +70,13 @@
     height: 331px;
 }
 
-ul.list-style-none {
+/* ul.list-style-none {
     list-style: none;
     padding: 0;
+} */
+
+ul {
+    list-style-type: none;
 }
 
 span {

@@ -20,14 +20,36 @@ function Resume () {
         {   title: "JQuery",
             certificate: "SoloLearn JQuery Course",
             url: "https://www.sololearn.com/Certificate/1082-21627687/jpg/"
-        },
+        }
     ]
 
     let dataWorks = [
-        {   since: "2018-2020",
+        {   since: "2020-2020",
+            title: "Financial Consultant",
+            jobdesc: "Explaining forex investment and looking for client",
+            jobdesc2: "Analyzing forex market",
+            jobdesc3: "Maintance Client"
+        },
+        {   since: "2019-2019",
+            title: "Store Leader Development",
+            jobdesc: "Cleaning area store and product display",
+            jobdesc2: "Display product with 5F & planogram method",
+            jobdesc3: "Refill product and printing pricetag product",
+            jobdesc4: "Cashier Operation",
+            jobdesc5: "Offering customers domestic & international",
+            jobdesc6: "Receive product & return product by system",
+            jobdesc7: "Managing store with PAPC method",
+            jobdesc8: "Monthly Stock Opname"
+        },
+        {   since: "2018-2019",
             title: "Accounting & Tax Officer",
-            jobdesc: "I'am an accounting and tax officer in PT.Chandra Consulting"
+            jobdesc: "Recap spend money and receive money voucher",
+            jobdesc2: "Check Inventories",
+            jobdesc3: "Journal of expenses and income on MYOB",
+            jobdesc4: "Recap and journal withholding tax slip ",
+            jobdesc5: "Paying tax payable every month with id billing on bank account"
         }
+        
     ]
 
     let dataEducation = [
@@ -42,7 +64,7 @@ function Resume () {
         },
         {   school: "SD N 1 Gianyar",
             since: "2005-2008"
-        },
+        }
         
     ]
 
@@ -86,7 +108,14 @@ function Resume () {
                                             <h3 className="m-0">{work.title}</h3>
                                             <ul>
                                                 <li>
-                                                    <p className="my-4">{work.jobdesc}</p>    
+                                                    <p className="my-3">{work.jobdesc}</p>
+                                                    <p className="my-3">{work.jobdesc2}</p>
+                                                    <p className="my-3">{work.jobdesc3}</p>
+                                                    <p className="my-3">{work.jobdesc4}</p>
+                                                    <p className="my-3">{work.jobdesc5}</p>
+                                                    <p className="my-3">{work.jobdesc6}</p>
+                                                    <p className="my-3">{work.jobdesc7}</p>
+                                                    <p className="my-3">{work.jobdesc8}</p>    
                                                 </li>
                                             </ul>
                                         </div>
