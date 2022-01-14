@@ -9,6 +9,10 @@ function Resume () {
             certificate: "SoloLearn Javascript Course",
             url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png"
         },
+        {   title: "PHP",
+            certificate: "SoloLearn PHP Course",
+            url: "https://www.sololearn.com/Certificate/1059-21627687/jpg"
+        },
         {   title: "HTML",
             certificate: "SoloLearn HTML Course",
             url: "https://www.sololearn.com/Certificate/1014-21627687/jpg/"

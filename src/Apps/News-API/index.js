@@ -11,6 +11,7 @@ function Main () {
             return 
         }
         var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-30-01&to=2021-12-25&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
+        // var url = `http://api.mediastack.com/v1/news?access_key=750543615e72668de297b6dcd7cfeee0`
         setIsLoading(true);
         fetch(url) 
         .then(result => result.json())
@@ -47,7 +48,7 @@ function Main () {
                         <td className="text-center fw-bold">Published</td>
                         <td className="text-center fw-bold">Images</td>
                     </tr>
-                    {isLoading && ( <tr> 
+                    {isLoading && ( <tr>  
                         <td colSpan="4" align="center">
                             <div class="spinner-border text-muted"></div>
                         </td>
