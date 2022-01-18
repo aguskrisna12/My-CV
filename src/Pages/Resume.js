@@ -51,7 +51,9 @@ function Resume () {
             jobdesc2: "Check Inventories",
             jobdesc3: "Journal of expenses and income on MYOB",
             jobdesc4: "Recap and journal withholding tax slip ",
-            jobdesc5: "Paying tax payable every month with id billing on bank account"
+            jobdesc5: "Paying tax payable every month with id billing on bank account",
+            jobdesc6: "Mark the taxable income tax (pph 23, pph 25, PPn)",
+            jobdesc7: "Making Annual Tax (Company & Person)"
         }
         
     ]
