@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import NewsApi from  './Apps/News-API';
 import TodoList from './Apps/Todo-List';
 import MemoryGame from './Apps/Memory-Game';
-import Counter from './Apps/Audio/index'
+import Audio from './Apps/Audio/index'
 import News from './Apps/News/index'
 import { useState } from 'react';
 
@@ -82,8 +82,8 @@ function App() {
           <Route path="/game">
             <MemoryGame />
           </Route>
-          <Route path="/counter">
-            <Counter />
+          <Route path="/audio">
+            <Audio />
           </Route>
           <Route path="/news">
             <News />

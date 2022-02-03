@@ -8,9 +8,9 @@ function Main () {
           [keyword, setKeyword] = useState("");
     function queryData () {
         if(!keyword) { // jika tidak ada keyword maka berhenti/tidak melakukan apa" 
-            return 
+            return;
         }
-        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-30-01&to=2021-12-25&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
+        var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-30-01&to=2022-30-01&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
         // var url = `http://api.mediastack.com/v1/news?access_key=750543615e72668de297b6dcd7cfeee0`
         setIsLoading(true);
         fetch(url) 
