@@ -1,4 +1,3 @@
-import img from '../Images/Profile5.jpg';
 import img1 from '../Images/Profile1.jpg';
 import { Link } from 'react-router-dom';
 
