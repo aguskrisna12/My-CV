@@ -1,4 +1,5 @@
 import img from '../Images/Profile5.jpg';
+import img1 from '../Images/Profile1.jpg';
 import { Link } from 'react-router-dom';
 
 function Buttons () {
@@ -17,7 +18,7 @@ function Home () {
       <div class="row mx-0 d-flex w-100 p-relative justify-content-center"> 
         
         <div class="div1 col-12 col-md-6 col-lg-5 col-xl-6 d-flex justify-content-end align-items-end">
-          <img className="profile mt-xl-0 mt-lg-5" src={img} alt=""/>
+          <img className="profile mt-xl-0 mt-lg-5" src={img1} alt=""/>
         </div>
 
         <div className="div2 col-12 col-md-6 col-xl-6 col-lg-7 px-5">
