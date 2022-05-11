@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import Home from './Pages/Home';
@@ -8,8 +7,6 @@ import Contact from './Pages/Contact';
 import NewsApi from  './Apps/News-API';
 import TodoList from './Apps/Todo-List';
 import MemoryGame from './Apps/Memory-Game';
-import Audio from './Apps/Audio/index'
-import News from './Apps/News/index'
 import { useState } from 'react';
 
 import {
@@ -81,12 +78,6 @@ function App() {
           </Route>
           <Route path="/game">
             <MemoryGame />
-          </Route>
-          <Route path="/audio">
-            <Audio />
-          </Route>
-          <Route path="/news">
-            <News />
           </Route>
           <Route path="/">
             <Home />

@@ -71,7 +71,7 @@ function Resume () {
             since: "2008-2011"
         },
         {   school: "SD N 1 Gianyar",
-            since: "2005-2008"
+            since: "2002-2008"
         }
         
     ]
