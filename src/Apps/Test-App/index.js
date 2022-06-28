@@ -1,6 +1,5 @@
 import React from 'react';
 import './test.css';
-import axios from 'axios';
 
 
 class Main extends React.Component{
