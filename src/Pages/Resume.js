@@ -48,7 +48,7 @@ function Resume () {
             jobdesc8: "Monthly Stock Opname"
         },
         {   since: "2018-2019",
-            title: "Accounting & Tax Officer",
+            title: "Accounting",
             jobdesc: "Recap spend money and receive money voucher",
             jobdesc2: "Check Inventories",
             jobdesc3: "Journal of expenses and income on MYOB",

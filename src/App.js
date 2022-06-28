@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import NewsApi from  './Apps/News-API';
 import TodoList from './Apps/Todo-List';
 import MemoryGame from './Apps/Memory-Game';
+import TestApp from './Apps/Test-App';
 import { useState } from 'react';
 
 import {
@@ -49,10 +50,10 @@ function App() {
                     <h5>{cdate}</h5>
                   </div>
                   <>{ctime}</>
-                  <Link className='px-1 px-md-3 text-decoration-none' to="/">Home</Link>
-                  <Link className='px-1 px-md-3 text-decoration-none'  to="/resume">Resume</Link>
-                  <Link className='px-1 px-md-3 text-decoration-none' to="/project">Project</Link>
-                  <Link className='px-1 px-md-3 text-decoration-none me-3' to="/contact">Contact</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none text-dark fancy-link1' to="/">Home</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none text-dark fancy-link2'  to="/resume">Resume</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none text-dark fancy-link3' to="/project">Project</Link>
+                  <Link className='px-1 px-md-3 text-decoration-none text-dark me-3 fancy-link4' to="/contact">Contact</Link>
                 </div>
               </li>
             </ul>
@@ -78,6 +79,9 @@ function App() {
           </Route>
           <Route path="/game">
             <MemoryGame />
+          </Route>
+          <Route path="/test">
+            <TestApp />
           </Route>
           <Route path="/">
             <Home />
