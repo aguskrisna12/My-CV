@@ -3,30 +3,38 @@
 function Resume () {
 
     let dataResume = [
-        {   title: "ReactJS",
-            certificate: "SoloLearn ReactJS Course",
-            url: "https://www.sololearn.com/Certificate/1097-21627687/jpg/"
+        {   title: "Web Development Fundamentals",
+            certificate: "SoloLearn Web Development Fundamentals Course",
+            url: "https://api2.sololearn.com/v2/certificates/CT-IKY2LQ3G/image/png"
         },
-        {   title: "JavaScript",
-            certificate: "SoloLearn Javascript Course",
-            url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png"
+        {   title: "SQL",
+            certificate: "SoloLearn SQL Course",
+            url: "https://api2.sololearn.com/v2/certificates/CT-TYYUMOQE/image/png"
         },
         {   title: "PHP",
             certificate: "SoloLearn PHP Course",
             url: "https://www.sololearn.com/Certificate/1059-21627687/jpg"
         },
-        {   title: "HTML",
-            certificate: "SoloLearn HTML Course",
-            url: "https://www.sololearn.com/Certificate/1014-21627687/jpg/"
+        {   title: "ReactJS",
+            certificate: "SoloLearn ReactJS Course",
+            url: "https://www.sololearn.com/Certificate/1097-21627687/jpg/"
+        },
+        {   title: "JQuery",
+            certificate: "SoloLearn JQuery Course",
+            url: "https://www.sololearn.com/Certificate/1082-21627687/jpg/"
+        },
+        {   title: "JavaScript",
+            certificate: "SoloLearn Javascript Course",
+            url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png"
         },
         {   title: "CSS",
             certificate: "SoloLearn CSS Course",
             url: "https://www.sololearn.com/Certificate/1023-21627687/jpg/"
         },
-        {   title: "JQuery",
-            certificate: "SoloLearn JQuery Course",
-            url: "https://www.sololearn.com/Certificate/1082-21627687/jpg/"
-        }
+        {   title: "HTML",
+            certificate: "SoloLearn HTML Course",
+            url: "https://www.sololearn.com/Certificate/1014-21627687/jpg/"
+        }  
     ]
 
     let dataWorks = [
@@ -88,9 +96,13 @@ function Resume () {
                         <ul className="list-style-none">
                         {dataResume.map((resume) => {
                             return (
-                                    <><li className="ps-3">{resume.title}</li>
-                                    <a className="ps-3" href={resume.url} target="_blank" rel="noreferrer">{resume.certificate}</a>
-                                    </>)
+                                    <>
+                                        <li className="ps-3">{resume.title}</li>
+                                        <a className="ps-3" href={resume.url} target="_blank" rel="noreferrer">
+                                            {resume.certificate}
+                                        </a>
+                                    </>
+                                    )
                                 })}
                         </ul>
                     </div>
@@ -109,7 +121,7 @@ function Resume () {
                             return (
                                 <tr>
                                     <td className="pt-3 align-top">
-                                        <span>{work.since}</span>
+                                        <p>{work.since}</p>
                                     </td>
                                     <td>
                                         <div className="ps-3">

@@ -11,7 +11,6 @@ function Main () {
             return;
         }
         var url = `https://newsapi.org/v2/everything?q=${keyword}&from=2021-30-01&to=2022-30-01&sortBy=popularity&apiKey=764d4ff2218f4147a1a15be747698952`
-        // var url = `http://api.mediastack.com/v1/news?access_key=750543615e72668de297b6dcd7cfeee0`
         setIsLoading(true);
         fetch(url) 
         .then(result => result.json())

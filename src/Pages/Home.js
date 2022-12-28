@@ -1,4 +1,4 @@
-import img1 from '../Images/Profile1.jpg';
+import img1 from '../Images/img-12.jpg';
 import { Link } from 'react-router-dom';
 
 function Buttons () {

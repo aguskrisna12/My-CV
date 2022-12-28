@@ -4,18 +4,20 @@ import './test.css';
 
 class Main extends React.Component{
     componentWillMount(){
-        console.log()
+        
     }
     render(){
         console.log('di render kedua')
         return(
-            <div>
-                hello
+            <div className='bg-primary'>
+                <div className='bg-success'>
+                    heloo
+                </div>
             </div>
         )
     }
     componentDidMount(){
-        console.log('di render ketiga')
+        
     }
 }
 
