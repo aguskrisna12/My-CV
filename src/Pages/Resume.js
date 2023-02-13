@@ -36,24 +36,20 @@ function Resume () {
             url: "https://www.sololearn.com/Certificate/1014-21627687/jpg/"
         }  
     ]
-
+    
     let dataWorks = [
+        {
+            since: "2021-2021",
+            title: "Web Developer",
+            jobdesc: "Making responsive web project",
+            jobdesc2: "Making CRUD, built API in the project",
+            jobdesc3: "Complete some tasks assigned by project manager"
+        },
         {   since: "2020-2020",
             title: "Financial Consultant",
             jobdesc: "Explaining forex investment and looking for client",
             jobdesc2: "Analyzing forex market",
             jobdesc3: "Maintance Client"
-        },
-        {   since: "2019-2019",
-            title: "Store Leader Development",
-            jobdesc: "Cleaning area store and product display",
-            jobdesc2: "Display product with 5F & planogram method",
-            jobdesc3: "Refill product and printing pricetag product",
-            jobdesc4: "Cashier Operation",
-            jobdesc5: "Offering customers domestic & international",
-            jobdesc6: "Receive product & return product by system",
-            jobdesc7: "Managing store with PAPC method",
-            jobdesc8: "Monthly Stock Opname"
         },
         {   since: "2018-2019",
             title: "Accounting",
@@ -87,7 +83,7 @@ function Resume () {
     return (
         <div className="container">
             <h3>Resume</h3>
-            <div className="d-flex ps-5 justify-content-center">
+            <div className="d-flex justify-content-center">
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Skill & Expertise</h3>
                 </div>
@@ -111,7 +107,7 @@ function Resume () {
 
             <hr />
             
-            <div className="d-flex ps-5 justify-content-center">
+            <div className="d-flex justify-content-center">
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Work Experience</h3>
                 </div>
@@ -121,7 +117,7 @@ function Resume () {
                             return (
                                 <tr>
                                     <td className="pt-3 align-top">
-                                        <p>{work.since}</p>
+                                        <p style={{whiteSpace:"nowrap"}}>{work.since}</p>
                                     </td>
                                     <td>
                                         <div className="ps-3">
@@ -149,7 +145,7 @@ function Resume () {
 
             <hr />
 
-            <div className="d-flex ps-5 justify-content-center">
+            <div className="d-flex justify-content-center">
                 <div className="w-50 d-flex justify-content-center">
                     <h3>Education</h3>
                 </div>
