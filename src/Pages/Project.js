@@ -24,10 +24,10 @@ function Project () {
     ];
     
     return (
-        <div className="contair">
-            <h3 className="ms-5 ps-3">Projects</h3>
+        <div className="container">
+            <h3>Projects</h3>
             <div className="d-flex justify-content-center">
-                <table className="w-75">
+                <table className="w-100">
                     {projects.map((project) => {
                         return (
                             <tr>
