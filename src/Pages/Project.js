@@ -28,9 +28,9 @@ function Project () {
             <h3>Projects</h3>
             <div className="d-flex justify-content-center">
                 <table className="w-100">
-                    {projects.map((project) => {
+                    {projects.map((project, index) => {
                         return (
-                            <tr>
+                            <tr key={index}>
                                 <td>
                                     <h2>{project.title}</h2>
                                     <span>{project.link}</span>

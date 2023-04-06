@@ -199,3 +199,21 @@ span {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.resume-title{
+    height:fit-content;
+    align-items:center
+}
+
+
+@media only screen and (min-width: 600px) {
+    .resume-p {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .back {
+      display: none;
+    }
+  }
