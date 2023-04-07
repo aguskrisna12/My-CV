@@ -109,7 +109,7 @@ function Resume() {
         <div className="row">
           <div className="col-sm-12">
             <div className="d-flex justify-content-center my-2 mb-3">
-              <h3>Skill & Expertise</h3>
+              <h2>Skill & Expertise</h2>
             </div>
             <div className="col-sm-12">
               <div className="d-flex">
@@ -137,7 +137,7 @@ function Resume() {
         <div className="row">
           <div className="col-sm-12 col-lg-12">
             <div className="d-flex justify-content-center my-2 mb-3">
-              <h3>Work Experience</h3>
+              <h2>Work Experience</h2>
             </div>
           </div>
           <div className="col-sm-12 col-lg-12">
@@ -150,7 +150,7 @@ function Resume() {
                         <td>
                           <div>
                             <div className="d-flex justify-content-center resume-title">
-                              <h3 className="me-2">{work.title}</h3>
+                              <h4 className="me-2">{work.title}</h4>
                               <span>{work.since}</span>
                             </div>
 
@@ -183,7 +183,7 @@ function Resume() {
         <div className="row">
           <div className="col-sm-12">
             <div className="d-flex justify-content-center my-2 mb-3">
-              <h3>Education</h3>
+              <h2>Education</h2>
             </div>
           </div>
           <div className="col-sm-12">
