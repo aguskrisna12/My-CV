@@ -1,6 +1,4 @@
-import img1 from "../Images/NewsAPI.png";
-import img2 from "../Images/TodoList.png";
-import img3 from "../Images/Game.png";
+import img from "../Images/react-app.png";
 import { Link } from "react-router-dom";
 
 function Project() {
@@ -9,7 +7,7 @@ function Project() {
       title: "News-API",
       description:
         "So sorry my News-Api cant load because only using localhost",
-      imgUrl: img1,
+      imgUrl: img,
       link: (
         <Link className="btn btn-success" to="./newsapi">
           Here
@@ -20,7 +18,7 @@ function Project() {
       title: "TodoList",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      imgUrl: img2,
+      imgUrl: img,
       link: (
         <Link className="btn btn-success" to="./todolist">
           Here
@@ -31,9 +29,20 @@ function Project() {
       title: "The Memory Game",
       description:
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
-      imgUrl: img3,
+      imgUrl: img,
       link: (
         <Link className="btn btn-success" to="./game">
+          Here
+        </Link>
+      ),
+    },
+    {
+      title: "Search Film",
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      imgUrl: img,
+      link: (
+        <Link className="btn btn-success" to="./film">
           Here
         </Link>
       ),

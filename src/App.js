@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import NewsApi from  './Apps/News-API';
 import TodoList from './Apps/Todo-List';
 import MemoryGame from './Apps/Memory-Game';
+import FilmApi from './Apps/Film-API'
 import { useState } from 'react';
 
 import {
@@ -78,6 +79,9 @@ function App() {
           </Route>
           <Route path="/game">
             <MemoryGame />
+          </Route>
+          <Route path="/film">
+            <FilmApi />
           </Route>
           <Route path="/">
             <Home />
