@@ -8,8 +8,7 @@ const Todo = () => {
         [
         {id: 1, title: "Eat"},
         {id: 2, title: "Sleep"},
-        {id: 3, title: "Find Jobs"},
-        {id: 4, title: "Repeat"}
+        {id: 3, title: "Repeat"}
         ]
     );
     const [isEditing,setIsEditing] = useState(false); // tombol edit turn off/on

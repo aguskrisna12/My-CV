@@ -101,7 +101,7 @@ function Resume() {
   return (
     <div className="container">
       <div className="back">
-        <a className="btn btn-primary" href="/home">
+        <a className="btn btn-primary" href="/">
           <i className="bi bi-backspace-fill"></i> Back
         </a>
       </div>
