@@ -16,9 +16,14 @@ function Resume() {
       url: "https://www.sololearn.com/Certificate/1097-21627687/jpg/",
     },
     {
+      title: "JavaScript Intermediate",
+      certificate: "SoloLearn Javascript Intermediate Course",
+      url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png",
+    },
+    {
       title: "JavaScript",
       certificate: "SoloLearn Javascript Course",
-      url: "https://www.sololearn.com/certificates/course/en/21627687/1024/landscape/png",
+      url: "https://www.sololearn.com/certificates/CC-LEQMSJNT",
     },
     {
       title: "CSS",
